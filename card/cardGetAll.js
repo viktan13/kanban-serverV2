@@ -1,5 +1,12 @@
+const Card = require("./Model");
+
 function cardGetAll(req, res) {
-    res.send('All cards')
+    Card.find().exec()
+        .then(result => res.send(result))
+        .catch(err => {
+            console.log(err);
+            res.send('Cannot get any cards')
+        });
 }
 
 module.exports = cardGetAll;

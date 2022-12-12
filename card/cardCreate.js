@@ -6,7 +6,7 @@ function cardCreate(req, res) {
     const newCard = new Card(req.body);
     newCard.save()
         .then(() => {
-            res.send('New card is created');
+            res.send('New card is created!!!');
         })
         .catch(err => {
             console.log(err);

@@ -10,6 +10,6 @@ const router = Router();
 router.get('/', cardGetAll);
 router.post('/', cardCreate);
 router.patch('/:cardId', cardUpdateById);
-router.patch('/:cardId', cardDelete)
+router.delete('/:cardId', cardDelete)
 
 module.exports = router;

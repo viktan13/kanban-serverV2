@@ -1,4 +1,4 @@
-const cardsRouter = require('../card/Routes')
+const cardsRouter = require('../cards/Routes')
 
 // let cards = [
 //     {id: '1', name: 'First Card', status: 'todo', priority: 2},

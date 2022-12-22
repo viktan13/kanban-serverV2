@@ -1,7 +1,3 @@
-const cardCreate = require("../card/cardCreate");
-const cardGetAll = require("../card/cardGetAll");
-const cardUpdateById = require("../card/cardUpdateById");
-const cardDelete = require("../card/cardDelete");
 const cardsRouter = require('../card/Routes')
 
 // let cards = [

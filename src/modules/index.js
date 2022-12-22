@@ -1,8 +1,8 @@
 const express = require('express');
-const routes = require("./modules/routes");
-const parseBody = require("./modules/parseBody");
-const dbConnection = require("./modules/dbConnection");
-const CORS = require("./modules/cors");
+const routes = require("./cores/routes");
+const parseBody = require("./cores/parseBody");
+const dbConnection = require("./cores/dbConnection");
+const CORS = require("./cores/cors");
 const app = express();
 const PORT = process.env.PORT || 5000;
 

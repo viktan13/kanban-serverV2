@@ -2,6 +2,7 @@ const cardCreate = require("../card/cardCreate");
 const cardGetAll = require("../card/cardGetAll");
 const cardUpdateById = require("../card/cardUpdateById");
 const cardDelete = require("../card/cardDelete");
+const cardsRouter = require('../card/Routes')
 
 // let cards = [
 //     {id: '1', name: 'First Card', status: 'todo', priority: 2},
@@ -13,11 +14,7 @@ function routes(app) {
     app.get('/', (req, res) => {
         res.send('Hello World');
     })
-
-    app.get('/cards', cardGetAll)
-    app.post('/cards', cardCreate)
-    app.patch('/cards/:cardId', cardUpdateById)
-    app.delete('/cards/:cardId', cardDelete)
+    app.use('/cards', cardsRouter);
 }
 
 module.exports = routes;

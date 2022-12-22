@@ -1,7 +1,7 @@
-const cardCreate = require("./card/cardCreate");
-const cardGetAll = require("./card/cardGetAll");
-const cardUpdateById = require("./card/cardUpdateById");
-const cardDelete = require("./card/cardDelete");
+const cardCreate = require("../card/cardCreate");
+const cardGetAll = require("../card/cardGetAll");
+const cardUpdateById = require("../card/cardUpdateById");
+const cardDelete = require("../card/cardDelete");
 
 // let cards = [
 //     {id: '1', name: 'First Card', status: 'todo', priority: 2},

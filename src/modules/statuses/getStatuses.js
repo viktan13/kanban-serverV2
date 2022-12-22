@@ -2,7 +2,7 @@ const Status = require('./Model');
 
 function getStatuses(req, res){
     Status
-        .finc()
+        .find()
         .exec()
         .then(result => {
             res.status(200).json(result);
